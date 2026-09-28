@@ -26,7 +26,7 @@ System.out.println();
 for(int outer=0;outer<place.length;outer++){
     System.out.print("" + place [outer] + "\t");
     
-    for(int inner=0;inner<price_sales[inner].length;inner++){
+    for(int inner=0;inner<price_sales[outer].length;inner++){
         System.out.print("\t"+ price_sales[outer][inner] + "\t");
         
     }
@@ -43,7 +43,7 @@ System.out.println("================================");
 for(int outer =0;outer<electronic.length;outer++){
     int total =0;
     System.out.print(""+ place [outer] + "\t");
-    for(int inner=0; inner<price_sales[inner].length;inner++){
+    for(int inner=0; inner<price_sales[outer].length;inner++){
         total += price_sales[outer][inner];
     }
     System.out.println(total);
